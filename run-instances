@@ -1,0 +1,6 @@
+aws ec2 run-instances \
+  --image-id ami-03b8356d5548f848e \
+  --count 1 \
+  --instance-type p2.xlarge \
+  --key-name id_rsa \
+  --security-group-ids sg-08659daf49513092b
