@@ -2,12 +2,9 @@ curl -svO https://mirror.clarkson.edu/blender/release/Blender2.93/blender-2.93.1
 tar xf blender-2.93.1-linux-x64.tar.xz
 BLENDER_PATH="$HOME/blender-2.93.1-linux-x64"
 
-mkdir bin
-curl -svo bin/hillshade.py https://raw.githubusercontent.com/painkillergis/hillshade/ec2/hillshade.py
-curl -svo bin/blender.py https://raw.githubusercontent.com/painkillergis/hillshade/ec2/blender.py
+curl -svo hillshade.py https://raw.githubusercontent.com/painkillergis/hillshade/ec2/hillshade.py
+curl -svo blender.py https://raw.githubusercontent.com/painkillergis/hillshade/ec2/blender.py
 chmod +x bin/hillshade.py
-chmod +x bin/blender.py
-BIN_PATH=$HOME/bin
 
 echo export TERM=vt100 >> ~/.bashrc
-echo export PATH=\"$BLENDER_PATH:$BIN_PATH:\$PATH\" >> ~/.bashrc
+echo export PATH=\"$BLENDER_PATH:\$PATH\" >> ~/.bashrc
