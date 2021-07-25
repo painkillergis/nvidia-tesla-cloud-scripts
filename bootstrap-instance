@@ -4,7 +4,7 @@ BLENDER_PATH="$HOME/blender-2.93.1-linux-x64"
 
 curl -svo hillshade.py https://raw.githubusercontent.com/painkillergis/hillshade/ec2/hillshade.py
 curl -svo blender.py https://raw.githubusercontent.com/painkillergis/hillshade/ec2/blender.py
-chmod +x bin/hillshade.py
+chmod +x hillshade.py
 
 echo export TERM=vt100 >> ~/.bashrc
 echo export PATH=\"$BLENDER_PATH:\$PATH\" >> ~/.bashrc
